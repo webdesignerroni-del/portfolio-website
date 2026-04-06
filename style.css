@@ -147,6 +147,8 @@ main {
 .services-item {
   font-size: 20px;
   font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .services-items {
   text-align: left;
@@ -160,4 +162,32 @@ main {
   margin-top: 50px;
   padding: 30px;
   box-shadow: 0 6px 50px rgb(0, 0, 0, 0.06);
+}
+.education {
+  font-size: 30px;
+  font-weight: bold;
+  color: #474747;
+  margin-bottom: 20px;
+}
+.education-dis {
+  font-size: 25px;
+  font-weight: bold;
+  color: #474747;
+}
+.education-dis-text {
+  font-size: 20px;
+  font-weight: 600;
+  color: #474747;
+  margin-bottom: 20px;
+}
+.summery-content {
+  display: flex;
+  gap: 24px;
+  text-align: start;
+  margin-top: 130px;
+  margin-bottom: 100px;
+}
+.summery-section {
+  margin-top: 130px;
+  margin-bottom: 130px;
 }
