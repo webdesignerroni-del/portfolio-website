@@ -16,10 +16,15 @@
     <header class="header">
       <nav>
         <h1 class="font-title">Ma<span class="head-color">r</span>y</h1>
-        <ul>
+        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links">
           <li><a href="">portfolio</a></li>
           <li><a href="">blog</a></li>
-          <li><a href=""></a><button>Hire ME</button></li>
+          <li><button>Hire ME</button></li>
         </ul>
       </nav>
       <div class="banner">
@@ -139,7 +144,14 @@
         </div>
         <button class="btn">Download CV</button>
       </div>
-
     </main>
-  </body>
+    <script>
+      const hamburger = document.querySelector('.hamburger');
+      const navLinks = document.querySelector('.nav-links');
+
+      hamburger.addEventListener('click', () => {
+        const isOpen = navLinks.classList.toggle('open');
+        hamburger.setAttribute('aria-expanded', isOpen.toString());
+      });
+    </script>
 </html>
